@@ -1,0 +1,19 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background-color: black;
+    padding-top: 400px;     
+}
+input{
+    background-image: url("baseline_fingerprint_black_18dp.png");
+    border: none;
+    width: 40px;
+    height: 35px;
+    background-color: beige;
+    
+
+}
+h1{
+    color: beige;
+}

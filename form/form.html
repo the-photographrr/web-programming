@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script type ="text/javascript" lang="javascript" src="java.js">
+	src = "emailval.js"
+	</script>
+<body>
+
+<h1 > Data Collection</h1>
+<table>
+<form action="form.html" name=forms  action="form.html" onsubmit="return validateForm()"  method="POST" >
+
+ <label  for="fname">Name: </label> &ensp; &emsp;
+ <input type="text"  name=fname >
+  <br> <br>
+
+ <label for="age">Age:    </label>&emsp; &emsp;
+  <input type="number"  name="age" max="100"><br> <br>
+  	
+<label for="dob">Dob:</label>&emsp; &emsp;
+ <input type="date"  name="dob" ><br> <br>
+ 	
+<label for="Gender">Gender:    </label>&emsp;
+<input type="radio"  name="gender" > Male   
+<input type="radio" name="gender" > Female  
+<input type="radio" name="gender" > Other<br>
+<br>
+
+<label for="email">E-mail:</label>&emsp; &emsp; &emsp;
+ <input type="text" name=email onsubmit="ValidateEmail()" >
+<br>
+<br>
+<label for="pass">Password :</label>&emsp; &emsp;
+ <input type="password"  name="pass">
+<br>
+<br>
+	<label for="guardian">Gaurdian Name: </label>&emsp;
+	<input type="text" name="guardian">
+	<br>  
+<br>
+ <label for="Aadhar">Aadhar number:    </label>&emsp;
+  <input type="number"  name=Aadhar ><br>
+
+<p>Address:    </p>
+<textarea rows="8" cols="50"></textarea>
+<br>
+<br>
+	<label for="pin">PIN:    </label>&emsp; &emsp; 
+	  <input type="number"  name="pin" ><br> <br>
+	  
+	  	<label for="state">State:    </label> &emsp;
+	  &emsp; &ensp;<input type="text"  name="state" ><br>
+<br>
+	  	<label for="nation">Nation:    </label>&emsp;
+	  <input type="text"  name="nation"><br>
+	  		<br>
+	  	<center>
+		<br>
+		<br>
+		  <input class="button" type="submit" name="submit"value="Submit"/>
+<input class="button" type="reset"name="reset"value="Reset"/>
+</center>
+</table>
+</form>
+</body>
+</html>

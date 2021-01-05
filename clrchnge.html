@@ -1,0 +1,37 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+<script>
+
+
+function get_random_color() 
+{
+var color = '#';
+for (var i = 0; i < 6; i++ )
+{
+color += Math.round(Math.random())*6;
+}
+document.body.style.background= color;
+}
+
+
+src="form1.js"
+
+</script>
+</head>
+
+<body onclick="get_random_color()">
+
+</body>
+
+<body text="black" style="font-size:14pt;font-family:Garamond" >
+
+<center><h2><b><u>CLICK</b></u></h2></center>
+
+
+<center>
+<input type=submit value=" Click Here " >
+</form>
+</body>
+</html>

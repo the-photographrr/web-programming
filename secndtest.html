@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+<form>
+    <input type="checkbox" name="cb">COMPUTER<br>
+    <input type="checkbox" name="cb">ELECTRONICS<br>
+    <input type="submit" value="SUBMIT" onclick="validate()"> 
+</form> 
+<script type="text/javascript">
+    function validate() {
+        i = Document.form.cb.checked;
+        if (i==false) {
+            alert('please select any one');
+            return false;
+        } else return true;
+    }
+</script>  
+</body>
+</html>

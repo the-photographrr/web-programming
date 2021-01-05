@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ <script>
+  function ValidateForm(form)
+      
+  var nameField = form.num;     
+  ErrorText= "";
+  if (isNotEmpty(nameField) ) 
+  {
+
+  if (nameField.length == 0 || nameField == "" ) {
+
+      return false;
+  }
+  if (ErrorText= "") { form.submit() }
+  }
+</script>
+ </head>
+  <body>
+ <form name="feedback" action="#" method=post>
+   Number: 
+     <input type="text" name="num" >
+  
+    
+    <input type="submit" name="SubmitButton" value="Submit" onClick="ValidateForm(this.form)">
+ <input type="reset" value="Reset">
+  </form> 
+  </body>
+  </html>

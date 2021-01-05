@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>assignment 24/08</title>
+        <script type="text/javascript">
+        function gen()
+        {
+            var g=document.form1.gender.value;
+            if(g==0)
+            {
+                alert("Select Any Gender")
+            }
+        }
+        function num1()
+        {
+            var n=document.form2.num.value;
+            if(n==0)
+            {
+                alert("Enter the Number")
+            }
+        }
+        function num2()
+        {
+            var n1=document.form2.num.value;
+            if(n1.length !=10)
+            {
+                alert("Enter the Number in Correct Format ")
+            }
+        }
+        function pro()
+        {
+            var fst = document.form3.fn.value;
+            var sec = document.form3.sn.value;
+            document.getElementById("result").innerHTML= fst*sec
+            
+        }
+        </script>
+    </head>
+    <body bgcolor="#fff222" >
+        <h1 align="center"><b><u>ASSIGNMENT 24/08/2020</u></b></h1><br>
+        <h2>Question Number 1</h2>
+        <br>
+        <form name="form1">
+            <b>GENDER:</b>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            &nbsp;
+            <input type="button" onclick="gen()" value ="Submit">
+        </form><br>
+        <h2>Question Number 2 & 3</h2>
+        <form name="form2">
+            <b>NUMBER:</b>
+            <input type="text" name="num"><br><br>Q.2 :
+            <input type="button" onclick="num1()" value="Submit"><br><br>Q.3 :
+            <input type="button" onclick="num2()" value="Validate">
+        </form>
+        <br>
+        <form name="form3">
+            <h2>Question Number 4</h2>
+            <b>First Number:</b> &nbsp;
+            <input type="number" name="fn">
+            <br><br>
+            <b>Second Number</b>
+            <input type="number" name="sn">
+            <br><br>    
+            <input type="button" onclick="pro()" value="Submit">
+        </form><br>
+            <h2><output  id="result"></output></h2>
+    </body>
+</html>
