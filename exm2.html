@@ -1,0 +1,140 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Point</title>
+	<style>
+		body{
+    background-color: black;
+    margin-left: 20px;
+    color: white;
+}
+.question{
+    font-size: 30px;
+    font-weight: 100s;
+    color: black;
+}
+div{
+    margin: 20px;
+}
+.ques1{
+    background-color:#f3b96d;
+    border-radius: 15px;
+    margin-top: 20px;
+    border-color: brown;
+}
+.ques2{
+    background-color:#f3b96d;
+    border-radius: 15px;
+    margin-top: 20px;
+    border-color: brown;
+}.ques3{
+    background-color:#f3b96d;
+    border-radius: 15px;
+    margin-top: 20px;
+    border-color: brown;
+}.ques4{
+    background-color:#f3b96d;
+    border-radius: 15px;
+    margin-top: 20px;
+    border-color: brown;
+}
+.ans{
+    color: black;
+}
+.sub{
+    width: 40px;
+    background-color: rgb(75, 75, 241);
+    border: transparent;
+    
+    font-size: 20px;
+}
+.sub:hover{
+    border-radius: 20px;
+    color: thistle;
+}
+
+	</style>
+    <!-- --------css connect-------- -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ---------script-------- -->
+    <script>
+        //-----------mark-------------
+        function mark()
+        {  
+            var mrk = 0;
+            var qs1 = document.form1.qst1.value;
+            if( qs1 == 1 ){
+                mrk = mrk + 25;
+            }
+            var qs2 = document.form1.qst2.value;
+            if( qs2 == 1 ){
+                mrk = mrk + 25;
+            }
+            var qs3 = document.form1.qst3.value;
+            if( qs3 == 1 ){
+                mrk = mrk + 25;
+            }
+            var qs4 = document.form1.qst4.value;
+            if( qs4 == 1 ){
+                mrk = mrk + 25;
+            }
+            
+            alert(" mark is =" +mrk)
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <br>
+    <br>
+    <header>
+        <CENTER>
+        <h1>EXAM </h1>
+    </CENTER>
+    </header>
+    <br>
+    <hr>
+    <!-- ---------form-------- -->
+    <form name=form1 onsubmit="return mark()" >
+<div class="ques1">
+<p class="question">1. find the correct answer </p>
+<input type=radio name=qst1 class="ans" value="0"> abcdofg<br>
+<input type=radio name=qst1 class="ans" value="0"> abcdfeg<br>
+<input type=radio name=qst1 class="ans" value="1"> abcdefg<br>
+<input type=radio name=qst1 class="ans" value="0"> abedcfg<br><br>
+
+</div>
+<div class="ques2">
+<p class="question">2. full form of HTML  </p>
+<input type=radio name=qst2 class="anst" value="1"> HYPER TEXT MARKUP LANGUAGE <br>
+<input type=radio name=qst2 class="ans" value="0"> HYPER TEXT MAKER LANGUAGE <br>
+<input type=radio name=qst2 class="ans" value="0"> HYPER TEXT MAKEING LANGUAGE <br>
+<input type=radio name=qst2 class="ans" value="0"> HYPER TRANSFER MAKING LANGUAGE <br><br>
+</div>
+<div class="ques3">
+<p class="question">3. get the odd one</p>
+<input type=radio name=qst3 class="ans" value="0"> one<br>
+<input type=radio name=qst3 class="ans" value="1"> secondry<br>
+<input type=radio name=qst3 class="ans" value="0"> first<br>
+<input type=radio name=qst3 class="ans" value="0"> primary<br><br>
+</div>
+<div class="ques4">
+    <p class="question">4. Number of sides of  triangle</p>
+    <input type=radio name=qst4 class="ans" value="0"> 2<br>
+    <input type=radio name=qst4 class="ans" value="1"> 3<br>
+    <input type=radio name=qst4 class="ans" value="0"> 5<br>
+    <input type=radio name=qst4 class="ans" value="0"> 6<br><br>
+    </div>
+<CENTER>
+<input type=submit value=" Submit " onclick="mark()"  class="sub">
+</CENTER>
+</form>
+
+<!-- ---------form end-------- -->
+
+
+</body>
+</html>
